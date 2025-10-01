@@ -338,7 +338,7 @@ ul {
 }
 
 .rab__image img:hover {
-    transform: scale(1.05);
+    transform: scale(2.05);
 }
 
 .rab__text {
