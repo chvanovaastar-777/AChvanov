@@ -820,5 +820,83 @@ h5 {
     
     .menu__tabs {
         flex-direction: column;
+ 
+ 
     }
+
+/* ===== Показываем бургер на мобильных ===== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+
+
+    .nav {
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: #e1dddd;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        z-index: 1000;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .nav.nav--active {
+        max-height: 420px; /* подстраивай под количество пунктов */
+        padding: 12px 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav__item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .nav__link {
+        display: block;
+        padding: 12px 16px;
+        width: 100%;
+        text-decoration: none;
+        color: #222;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
